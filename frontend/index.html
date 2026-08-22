@@ -1,0 +1,53 @@
+<!doctype html>
+<!-- Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ -->
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="知华科技客户跟进管理系统，把客户互动、承诺事项和下一步计划沉淀为可执行节奏。预留 DeepSeek 兼容接口。">
+  <meta name="keywords" content="客户跟进系统,客户成功管理,商机跟进,客户健康度,销售AI,DeepSeek Java,知华科技">
+  <title>ZhuaTech Customer Follow-up｜知华科技客户跟进管理系统</title><link rel="icon" href="favicon.svg"><link rel="stylesheet" href="style.css">
+</head>
+<body style="--accent:#b35b3f;--accent-2:#cf7656">
+  <aside class="sidebar">
+    <a class="brand" href="https://www.zhuatech.cn/" target="_blank"><span class="brand-mark">ZH</span><span><b>知华科技</b><small>CUSTOMER FOLLOW-UP</small></span></a>
+    <div class="workspace-name"><span>企业工作空间</span><b>上海演示环境⌄</b></div>
+    <nav><button class="nav-item active"><span>▦</span>跟进看板</button>
+      <button class="nav-item "><span>◇</span>客户健康度</button>
+      <button class="nav-item "><span>✓</span>承诺事项</button>
+      <button class="nav-item "><span>⌁</span>团队日历</button></nav>
+    <div class="side-card"><b>本地演示模式</b><p>不会调用外部模型，也不会上传真实业务数据。</p><a href="https://www.zhuatech.cn/" target="_blank">访问知华科技官网 ↗</a></div>
+  </aside>
+  <main>
+    <header class="topbar"><div><p>客户成功运营 / 工作台</p><h1>客户跟进管理</h1></div><div class="top-actions"><button class="icon-button">⌕</button><button class="icon-button">?</button><span class="avatar">知</span></div></header>
+    <div class="content">
+      <section class="page-head"><div><h2>客户成功运营工作台</h2><p>把客户互动、承诺事项和下一步计划沉淀为可执行节奏</p></div><button class="primary" id="run-open">＋ 新建分析任务</button></section>
+      <section class="metrics"><article class="metric"><span>今日待跟进</span><strong>23</strong><small>较昨日 +8%</small></article>
+        <article class="metric"><span>逾期事项</span><strong>4</strong><small>本周保持稳定</small></article>
+        <article class="metric"><span>高风险客户</span><strong>3</strong><small>需要优先处理</small></article>
+        <article class="metric"><span>本周触达</span><strong>86</strong><small>数据更新于 10:30</small></article></section>
+      <section class="workspace-grid">
+        <article class="panel queue-panel">
+          <header><div><h3>当前处理队列</h3><p>按风险和更新时间排序</p></div><div class="tools"><label>⌕<input id="search" placeholder="搜索记录"></label><button id="refresh">刷新</button></div></header>
+          <div class="table-wrap"><table><thead><tr><th>客户</th><th>最近互动</th><th>关注主题</th><th>健康度</th><th>下一步</th></tr></thead><tbody><tr data-keywords="海岳设备集团 今天 10:20 二期报价 关注 明天回访"><td><b>海岳设备集团</b></td><td>今天 10:20</td><td>二期报价</td><td><span class="risk r0">关注</span></td><td>明天回访</td></tr>
+            <tr data-keywords="澄明供应链 昨天 16:45 上线培训 健康 周五培训"><td><b>澄明供应链</b></td><td>昨天 16:45</td><td>上线培训</td><td><span class="risk r1">健康</span></td><td>周五培训</td></tr>
+            <tr data-keywords="东辰零售 3 天前 续费评估 风险 今日联系"><td><b>东辰零售</b></td><td>3 天前</td><td>续费评估</td><td><span class="risk r2">风险</span></td><td>今日联系</td></tr></tbody></table></div>
+          <footer><span>显示 3 条重点记录</span><div><button>‹</button><b>1</b><button>›</button></div></footer>
+        </article>
+        <article class="panel insight-panel">
+          <header><div><span class="eyebrow">AI 辅助分析</span><h3>海岳设备集团</h3><p>二期项目商机跟进</p></div><span class="status">待人工确认</span></header>
+          <section class="summary"><b>分析摘要</b><p>客户认可一期交付效果，但二期预算尚未确认。建议围绕可量化收益准备简版方案，并在预算会前完成关键人沟通。</p></section>
+          <ul class="findings"><li><span>1</span><div><b>识别结果</b><p>最近两次互动均关注二期预算</p></div><em>94%</em></li>
+              <li><span>2</span><div><b>风险关注</b><p>业务负责人参与度稳定</p></div><em>82%</em></li>
+              <li><span>3</span><div><b>处理边界</b><p>财务决策人尚未进入沟通</p></div><em>76%</em></li></ul>
+          <section class="actions"><b>建议动作</b><label><input type="checkbox"><span>明天发送二期收益测算</span></label>
+              <label><input type="checkbox"><span>邀请财务决策人参加方案会</span></label>
+              <label><input type="checkbox"><span>七天后更新客户健康度</span></label></section>
+          <footer><button class="secondary">查看依据</button><button class="primary" id="approve">确认并进入流程</button></footer>
+        </article>
+      </section>
+      <div class="audit-line"><span>最后同步：2026-08-22 10:30</span><span>所有模型输出均需人工复核 · 上海如静知华信息科技有限公司</span></div>
+    </div>
+  </main>
+  <dialog id="run-dialog"><form method="dialog"><button class="close" value="cancel">×</button><span class="dialog-icon">客</span><h3>新建客户跟进管理任务</h3><p>填写演示对象与业务上下文，系统将执行本地确定性规则。</p><label>分析对象<input id="subject" value="海岳设备集团"></label><label>业务场景<input id="scenario" value="二期项目商机跟进"></label><label>补充上下文<textarea id="context">请结合当前业务规则给出可解释结果和后续动作。</textarea></label><label class="check"><input id="human-review" type="checkbox" checked> 结果进入人工复核队列</label><button class="primary wide" id="run-submit" value="default">运行演示分析</button><small id="run-status"></small></form></dialog>
+  <div class="toast" id="toast">已确认，任务进入后续流程</div><script src="app.js"></script>
+</body></html>
