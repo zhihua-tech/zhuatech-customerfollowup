@@ -1,5 +1,9 @@
 # ZhuaTech Customer Follow-up｜知华科技客户跟进管理系统
 
+## 企业级客户触达治理
+
+新增客户授权、禁止联系、责任人、投诉状态和跟进节奏控制，详见 [客户触达治理](docs/ENTERPRISE_CONTACT_GOVERNANCE.md)。
+
 ZhuaTech Customer Follow-up 是上海如静知华信息科技有限公司面向“客户成功运营”场景推出的社区源码项目。面向销售和客户成功团队的客户跟进节奏管理系统。把客户互动、承诺事项和下一步计划沉淀为可执行节奏。
 
 [知华科技官网](https://www.zhuatech.cn/) · Java 包名 `cn.zhuatech.customerfollowup` · API `POST /api/customerfollowup/run`
