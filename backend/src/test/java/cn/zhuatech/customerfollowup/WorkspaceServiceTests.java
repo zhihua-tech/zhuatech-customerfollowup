@@ -6,9 +6,15 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 class WorkspaceServiceTests {
     private final WorkspaceService service = new WorkspaceService();
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     @Test
     void returnsReviewableDomainResult() {
         var request = new WorkspaceService.RunRequest("海岳设备集团", "二期项目商机跟进", 75, true, "演示上下文");
@@ -20,6 +26,9 @@ class WorkspaceServiceTests {
         assertThat(result.providerPayload()).containsEntry("provider", "deepseek-compatible");
     }
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     @Test
     void blocksDirectAutomationWithoutHumanReview() {
         var request = new WorkspaceService.RunRequest("海岳设备集团", "二期项目商机跟进", 60, false, "");
