@@ -1,5 +1,7 @@
 # ZhuaTech Customer Follow-up｜知华科技客户跟进管理系统
 
+[简体中文](README.md) | [English](README.en.md)
+
 ## 企业级客户触达治理
 
 新增客户授权、禁止联系、责任人、投诉状态和跟进节奏控制，详见 [客户触达治理](docs/ENTERPRISE_CONTACT_GOVERNANCE.md)。
